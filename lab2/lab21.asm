@@ -1,4 +1,5 @@
 .386P
+
 desct struc ; структура описания дескрипторов сегментов
         limit     dw 0        ; граница (биты 0..15)
         base_l    dw 0        ; база (биты 0..15)
@@ -171,4 +172,5 @@ codeseg ends
 stk     segment stack 'stack'
         db      256 dup ('^')
 stk     ends
+
 end main
